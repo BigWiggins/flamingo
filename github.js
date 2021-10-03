@@ -24,7 +24,7 @@ global.github = {
         http.onreadystatechange = (e) => {
             debugger;
             switch(e.readyState) {
-                case 4 && e.status == 200:
+                case 4 && http.status == 200:
                     console.log('got it')
                     console.log(http.responseText)
                     break;
