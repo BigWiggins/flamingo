@@ -25,7 +25,7 @@ global.github = {
             switch (http.status) {
                 case 200:
                     switch(http.readyState) {
-                        case 4 == 200:
+                        case 4:
                             console.log('got it')
                             console.log(http.responseText)
                             break;
