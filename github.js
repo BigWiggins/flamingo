@@ -16,7 +16,7 @@ global.github = {
         let hostname = 'api.github.com'
     
         const http = new XMLHttpRequest();
-        const url=`//${hostname}/${action}`;
+        const url=`//${hostname}${action}`;
     
         http.open("GET", url);
         http.send();
